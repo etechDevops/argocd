@@ -45,16 +45,16 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 ## Links
 
 
-## Config repo: https://gitlab.com/nanuchi/argocd-app-config
+## https://github.com/etechDevops/argocd
 
 
-## Docker repo: https://hub.docker.com/repository/docker/nanajanashia/argocd-app
+## Docker repo: engr Elvis add please
 
 
 ## Install ArgoCD: https://argo-cd.readthedocs.io/en/stable/getting_started/#1-install-argo-cd
 
 
-## Login to ArgoCD: https://argo-cd.readthedocs.io/en/stable/getting_started/#4-login-using-the-cli
+## Login to ArgoCD: .......
 
 
 ## ArgoCD Configuration: https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/
