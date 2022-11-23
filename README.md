@@ -16,13 +16,13 @@ kubectl apply -f application.yaml
 ```
 
 ## access ArgoCD UI
- selector:
-      app.kubernetes.io/name: argocd-server
-    sessionAffinity: None
-    type: ClusterIP
-  status:
-    loadBalancer:
-      ingress:
+## selector:
+##      app.kubernetes.io/name: argocd-server
+##    sessionAffinity: None
+##    type: ClusterIP
+##  status:
+##    loadBalancer:
+##      ingress:
 ## under type, change ClusterIP to  LoadBalancer     
 
 ```
