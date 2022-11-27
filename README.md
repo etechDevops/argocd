@@ -1,3 +1,7 @@
+## Follow this link to create an EKS cluster
+```
+https://github.com/etechDevops/Terraform-EKS
+```
 ## install ArgoCD in k8s
 ```
 kubectl create namespace argocd
