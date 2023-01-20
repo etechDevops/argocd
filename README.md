@@ -29,9 +29,9 @@ kubectl apply -f application.yaml
 ## `under type, change ClusterIP to  LoadBalancer`    
 
 ```
-kubectl get pod -n argocd
-kubectl get svc -n argocd
-kubectl edit svc -n argocd
+kubectl get pod 
+kubectl get svc 
+kubectl edit svc argocd-server
 ```
 
 ## login with admin user and below token (as in documentation):
