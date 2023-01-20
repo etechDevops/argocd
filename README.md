@@ -9,7 +9,6 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 ```
 ## change namespace and switch to it
 ```
- kubectl config set-context -current-namespace=argocd
  kubectl config set-context --current --namespace=argocd
  kubectl config view | grep namespace
  ```
