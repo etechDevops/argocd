@@ -15,7 +15,7 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 ## aplly your application.yaml file this is the only kubectl apply you'll do
 ```
 vi application.yaml
-kubectl apply -f application.yaml
+kubectl apply -f application.yaml -n argocd
 ```
 
 ## `access ArgoCD UI`
