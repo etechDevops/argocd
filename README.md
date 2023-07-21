@@ -18,15 +18,15 @@ vi application.yaml
 kubectl apply -f application.yaml -n argocd
 ```
 
-## `access ArgoCD UI`
-## `selector:`
-##      `app.kubernetes.io/name: argocd-server`
-##    `sessionAffinity: None`
-##    `type: ClusterIP`
-##  `status:`
-##    `loadBalancer:`
-##      `ingress:`
-## `under type, change ClusterIP to  LoadBalancer`    
+#### `access ArgoCD UI`
+#### `selector:`
+####      `app.kubernetes.io/name: argocd-server`
+####    `sessionAffinity: None`
+####    `type: ClusterIP`
+####  `status:`
+####    `loadBalancer:`
+####     `ingress:`
+#### `under type, change ClusterIP to  LoadBalancer`    
 
 ```
 kubectl get pod 
