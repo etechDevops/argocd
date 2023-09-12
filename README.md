@@ -58,5 +58,6 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 
 
 ## ArgoCD Configuration: https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/
+
 ## NOTE: to delete your k8s cluster first delete argocd and myapp namespace
 
