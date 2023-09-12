@@ -23,7 +23,7 @@ kubectl get svc
 ```
 ### accessing ArgoCD UI
 
-######## Edit the service and change type from ClusterIP to LoadBalancer
+### Edit the service and change type from ClusterIP to LoadBalancer
    
 
 ```
