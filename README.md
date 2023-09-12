@@ -31,14 +31,14 @@ kubectl get svc
 kubectl edit svc argocd-server
 ```
 
-######## login with admin user and below token (as in documentation):
+### login with admin user and below token (as in documentation):
 ```
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 --decode && echo
 ```
-######## get password and enter in gitlab UI
-######## username is admin
+### get password and enter in gitlab UI
+### username is admin
 
-######## you can change and delete init password
+### you can change and delete init password
 
 ==============================================================================================
 
