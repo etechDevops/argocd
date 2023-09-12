@@ -21,7 +21,8 @@ kubectl apply -f application.yaml -n argocd
 kubectl get pod 
 kubectl get svc
 ```
-######## `accessing ArgoCD UI`
+######## accessing ArgoCD UI
+
 ######## Edit the service and change type from ClusterIP to LoadBalancer
    
 
