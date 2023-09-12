@@ -2,12 +2,12 @@
 ```
 https://github.com/etechDevops/kube-EKS
 ```
-## install ArgoCD in k8s
+## Create a namespace in your k8s and install ArgoCD  
 ```
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 ```
-## change namespace and switch to it
+## Switch to the namespace created above
 ```
  kubectl config set-context --current --namespace=argocd
  kubectl config view | grep namespace
@@ -17,31 +17,27 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 vi application.yaml
 kubectl apply -f application.yaml -n argocd
 ```
-
-#### `access ArgoCD UI`
-#### `selector:`
-####      `app.kubernetes.io/name: argocd-server`
-####    `sessionAffinity: None`
-####    `type: ClusterIP`
-####  `status:`
-####    `loadBalancer:`
-####     `ingress:`
-#### `under type, change ClusterIP to  LoadBalancer`    
-
 ```
 kubectl get pod 
-kubectl get svc 
+kubectl get svc
+```
+######## `accessing ArgoCD UI`
+######## Edit the service and change type from ClusterIP to LoadBalancer
+   
+
+```
+ 
 kubectl edit svc argocd-server
 ```
 
-## login with admin user and below token (as in documentation):
+######## login with admin user and below token (as in documentation):
 ```
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 --decode && echo
 ```
-## get password and enter in gitlab UI
-## username is admin
+######## get password and enter in gitlab UI
+######## username is admin
 
-## you can change and delete init password
+######## you can change and delete init password
 
 ==============================================================================================
 
@@ -51,7 +47,7 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 ## https://github.com/etechDevops/argocd
 
 
-## Docker repo: engr Elvis add please
+## Docker repo: engr Elvis is going to add it
 
 
 ## Install ArgoCD: https://argo-cd.readthedocs.io/en/stable/getting_started/#1-install-argo-cd
