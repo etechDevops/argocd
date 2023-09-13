@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: auskatodd/etechmaven:latest
+        image: dabaclovis/kubernapp_laravel:latest
         ports:
         - containerPort: 8080
