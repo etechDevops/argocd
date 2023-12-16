@@ -35,20 +35,16 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 ```
 you can optionally change and delete init password
 
-## Links
+Links
 
 [Argocd](https://github.com/etechDevops/argocd)
 
-
-## Docker repo: To be added by Engr Elvis
-
 [Argocd official website](https://argo-cd.readthedocs.io/en/stable/getting_started/#1-install-argo-cd)
-
 
 [ArgoCD Configuration](https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/)
 
-NOTE: to delete your k8s cluster first delete argocd and myapp namespace
+note: to delete your k8s cluster first delete argocd and myapp namespace
 ```
 kubectl delete ns myapp
 ```
-
+Docker repo To be added by Engr Elvis
